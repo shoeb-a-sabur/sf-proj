@@ -1,0 +1,3 @@
+jaxara_project_shoeb:
+    resource: "@JaxaraProjectShoebBundle/Resources/config/routing.yml"
+    prefix:   /

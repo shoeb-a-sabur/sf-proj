@@ -1,0 +1,7 @@
+jaxara_project_shoeb_homepage:
+    pattern:  /
+    defaults: { _controller: JaxaraProjectShoebBundle:Default:index }
+    
+jaxara_project_shoeb_login:
+    pattern:  /login
+    defaults: { _controller: JaxaraProjectShoebBundle:ShoebProject:loginAction }
