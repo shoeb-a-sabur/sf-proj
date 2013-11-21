@@ -1,10 +1,10 @@
 <?php
 
-namespace Acme\DemoBundle\Twig\Extension;
+namespace Jaxara\Project\ShoebBundle\Twig\Extension;
 
 use CG\Core\ClassUtils;
 
-class DemoExtension extends \Twig_Extension
+class ShoebExtension extends \Twig_Extension
 {
     protected $loader;
     protected $controller;
