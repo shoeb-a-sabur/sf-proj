@@ -1,6 +1,6 @@
 Pantheon\UserBundle\Entity\User:
     type:  entity
-    table: fos_user
+    table: users
     id:
         id:
             type: integer
