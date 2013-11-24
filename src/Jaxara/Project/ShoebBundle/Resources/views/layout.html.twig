@@ -20,16 +20,25 @@
                 </div>
 
                 <div class="search">
-                    <a href="">Login</a>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                        Logged in as <a href="{{ path('fos_user_profile_show') }}"><strong>{{ app.user.username }}</strong></a> |
+                        <a href="{{ path('fos_user_security_logout') }}">
+                            {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                        </a>
+                    {% else %}
+                        <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                    {% endif %}
                 </div>
             </div>
 
             <div class="sf-reset">
                 {% block body %}
-                    {% for flashMessage in app.session.flashbag.get('notice') %}
-                        <div class="flash-message">
-                            <em>Notice</em>: {{ flashMessage }}
-                        </div>
+                    {% for type, messages in app.session.flashbag.all() %}
+                        {% for key, message in messages %}
+                            <div class="flash-message flash-{{ type }}">
+                                {{ message|trans({}, 'FOSUserBundle') }}
+                            </div>
+                        {% endfor %}
                     {% endfor %}
                     
                     {% block content_header %}
