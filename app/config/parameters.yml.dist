@@ -12,4 +12,8 @@ parameters:
     mailer_password:   ~
 
     locale:            en
-    secret:            ThisTokenIsNotSoSecretChangeIt
+    secret:            b7b71143c3adc9779e74d825d5dc8a689b0182f3
+
+    # Sonata Admin Options
+    sonata_admin.title:             Sonata Project
+    sonata_admin.logo_title:        /bundles/sonataadmin/logo_title.png
