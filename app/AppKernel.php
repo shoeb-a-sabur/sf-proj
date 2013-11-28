@@ -19,6 +19,12 @@ class AppKernel extends Kernel
             new Jaxara\Project\ShoebBundle\JaxaraProjectShoebBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Pantheon\UserBundle\PantheonUserBundle(),
+            // Sonata
+            new Sonata\BlockBundle\SonataBlockBundle(),
+            new Sonata\jQueryBundle\SonatajQueryBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+            new Sonata\AdminBundle\SonataAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
