@@ -5,7 +5,6 @@ nbproject
 app/bootstrap*
 
 # Symfony directories
-vendor/*
 */logs/*
 */cache/*
 web/uploads/*
