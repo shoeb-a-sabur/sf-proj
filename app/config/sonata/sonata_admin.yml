@@ -12,3 +12,11 @@ sonata_admin:
         admin_permissions: [CREATE, LIST, DELETE, UNDELETE, EXPORT, OPERATOR, MASTER]
         # permission related to the objects
         object_permissions: [VIEW, EDIT, DELETE, UNDELETE, OPERATOR, MASTER, OWNER]
+        
+    title:      %sonata_admin.title%
+    title_logo: %sonata_admin.logo_title%
+    
+    dashboard:
+        blocks:
+            - { position: left, type: sonata.admin.block.admin_list }
+            - { position: center, type: sonata.block.service.text, settings: { content: "<h2>Welcome!</h2> This dashboard can be customized by editing the sonata_admin.yml file."} }
