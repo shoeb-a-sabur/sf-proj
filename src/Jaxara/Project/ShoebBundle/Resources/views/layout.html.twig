@@ -21,7 +21,7 @@
 
                 <div class="search">
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                        Logged in as <a href="{{ path('fos_user_profile_show') }}"><strong>{{ app.user.username }}</strong></a> |
+                        Logged in as <a href="{{ path('sonata_user_profile_show') }}"><strong>{{ app.user.username }}</strong></a> |
                         <a href="{{ path('fos_user_security_logout') }}">
                             {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                         </a>
