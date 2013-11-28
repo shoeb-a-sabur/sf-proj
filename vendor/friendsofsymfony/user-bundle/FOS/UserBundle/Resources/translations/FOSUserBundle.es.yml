@@ -68,7 +68,7 @@ resetting:
     flash:
         success: La contraseña se ha cambiado con éxito
     email:
-        subject: Restablecer Contraseña
+        subject: Bienvenido %username%!
         message : |
             Hola %username%!
 

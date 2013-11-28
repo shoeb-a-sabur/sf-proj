@@ -5,6 +5,7 @@ imports:
     # Sonata Bundles
     - { resource: sonata/sonata_admin.yml }
     - { resource: sonata/sonata_block.yml }
+    - { resource: sonata/sonata_user.yml }
 
 framework:
     #esi:             ~
@@ -53,9 +54,8 @@ doctrine:
         user:     %database_user%
         password: %database_password%
         charset:  UTF8
-        # if using pdo_sqlite as your database driver, add the path in parameters.yml
-        # e.g. database_path: %kernel.root_dir%/data/data.db3
-        # path:     %database_path%
+        types:
+            json: Sonata\Doctrine\Types\JsonType
 
     orm:
         auto_generate_proxy_classes: %kernel.debug%
@@ -70,8 +70,3 @@ swiftmailer:
     password:  %mailer_password%
     spool:     { type: memory }
    
-# FOSUser Configuration
-fos_user:
-    db_driver: orm
-    firewall_name: main
-    user_class: Pantheon\UserBundle\Entity\User
