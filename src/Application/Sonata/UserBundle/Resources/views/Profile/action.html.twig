@@ -16,7 +16,12 @@
         <div class="span8">
             {% for message in app.session.flashbag.get('fos_user_success') %}
                 <div class="alert alert-success">
-                    {{ message|trans({}, "SonataUserBundle") }}
+                    {% set message_arr = message|split('.') %}
+                    {% if message_arr|first == 'resetting' %}
+                        {{ message|trans({}, "FOSUserBundle") }}
+                    {% else %}
+                        {{ message|trans({}, "SonataUserBundle") }}
+                    {% endif %}
                 </div>
             {% endfor %}
 
