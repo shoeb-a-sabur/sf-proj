@@ -16,7 +16,6 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new Jaxara\Project\ShoebBundle\JaxaraProjectShoebBundle(),
 
             // Sonata
             new Sonata\BlockBundle\SonataBlockBundle(),
@@ -30,6 +29,10 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+            
+            // Custom
+            new Jaxara\Project\ShoebBundle\JaxaraProjectShoebBundle(),
+            new Pantheon\DemoBundle\PantheonDemoBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

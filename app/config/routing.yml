@@ -1,3 +1,7 @@
+pantheon_demo:
+    resource: "@PantheonDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
 jaxara_project_shoeb:
     resource: "@JaxaraProjectShoebBundle/Resources/config/routing.yml"
     prefix:   /

@@ -1,0 +1,3 @@
+pantheon_demo_homepage:
+    pattern:  /
+    defaults: { _controller: PantheonDemoBundle:Default:index }

@@ -1,0 +1,7 @@
+parameters:
+#    pantheon_demo.example.class: Pantheon\DemoBundle\Example
+
+services:
+#    pantheon_demo.example:
+#        class: %pantheon_demo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
