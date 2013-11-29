@@ -17,7 +17,7 @@
             {% for message in app.session.flashbag.get('fos_user_success') %}
                 <div class="alert alert-success">
                     {% set message_arr = message|split('.') %}
-                    {% if message_arr|first == 'resetting' %}
+                    {% if message_arr|first == 'resetting' or message_arr|first == 'change_password' %}
                         {{ message|trans({}, "FOSUserBundle") }}
                     {% else %}
                         {{ message|trans({}, "SonataUserBundle") }}
