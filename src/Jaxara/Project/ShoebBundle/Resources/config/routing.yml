@@ -1,3 +1,0 @@
-jaxara_project_shoeb_homepage:
-    pattern:  /old-home
-    defaults: { _controller: JaxaraProjectShoebBundle:Default:index }

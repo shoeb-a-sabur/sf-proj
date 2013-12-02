@@ -1,10 +1,6 @@
 pantheon_demo:
     resource: "@PantheonDemoBundle/Resources/config/routing.yml"
     prefix:   /
-
-jaxara_project_shoeb:
-    resource: "@JaxaraProjectShoebBundle/Resources/config/routing.yml"
-    prefix:   /
     
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"

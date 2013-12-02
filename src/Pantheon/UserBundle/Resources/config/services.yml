@@ -1,7 +1,0 @@
-parameters:
-#    pantheon_user.example.class: Pantheon\UserBundle\Example
-
-services:
-#    pantheon_user.example:
-#        class: %pantheon_user.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]

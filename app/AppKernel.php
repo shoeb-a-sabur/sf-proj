@@ -31,7 +31,6 @@ class AppKernel extends Kernel
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
             
             // Custom
-            new Jaxara\Project\ShoebBundle\JaxaraProjectShoebBundle(),
             new Pantheon\DemoBundle\PantheonDemoBundle(),
         );
 
